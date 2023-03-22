@@ -1,0 +1,508 @@
+/**
+* @name Junior Nazo Theme
+* @version 1.0
+* @author Junior Nazo
+* @description My theme
+* @source not-set
+* @invite not-set
+*/
+
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/bettterInvites.css);
+@import url('https://discord-extensions.github.io/modern-indicators/src/source.css');
+@import url("https://discordstyles.github.io/RadialStatus/dist/RadialStatus.css");
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Microsoft.css);
+@import url(https://dablulite.github.io/accountdetailscolumns/import.css);
+@import url(https://dablulite.github.io/redesigneduserareas/import.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/ChatBubbles.css);
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/bdAddonMini.css);
+@import url("https://thecommieaxolotl.github.io/BetterDiscord-Stuff/Imports/DiscordLinks.css");
+@import url(https://dablulite.github.io/RedesignedUserPanel/import.css);
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/boostedFavorites.css);
+
+/* || Configurations */
+
+.theme-light {
+    --indicator-unread: 0, calc(var(--saturation-factor, 1) * 0%), 0%;
+    --indicator-selected: 235, calc(var(--saturation-factor, 1) * 86%), 65%;
+    --indicator-connected: 139, calc(var(--saturation-factor, 1) * 47.6%), 48.6%;
+    --indicator-hovered: hsla(var(--indicator-unread), 0.08);
+    --text-active: black;
+}
+.theme-dark {
+    --indicator-unread: 0, calc(var(--saturation-factor, 1) * 0%), 100%;
+    --indicator-selected: 235, calc(var(--saturation-factor, 1) * 86%), 65%;
+    --indicator-connected: 139, calc(var(--saturation-factor, 1) * 86%), 65%;
+    --indicator-hovered: hsla(var(--indicator-unread), 0.045);
+    --text-active: white;
+}
+
+/* || Main Customization */
+:root {
+    --indicator-border-size: 2px;
+    --indicator-border-style: solid;
+    --indicator-rounding: 0;
+
+/* || Advanced Coloring */
+    --item-selected-icon: hsl(var(--indicator-selected));
+    --item-selected-indicator: hsl(var(--indicator-selected));
+    --item-selected-background: hsla(var(--indicator-selected), 0.1);
+    --item-selected-background-hover: hsla(var(--indicator-selected), 0.2);
+
+    --item-connected-icon: hsl(var(--indicator-connected));
+    --item-connected-indicator: hsl(var(--indicator-connected));
+    --item-connected-background: hsl(var(--indicator-connected), 0.1);
+    --item-connected-background-hover: hsl(var(--indicator-connected), 0.2);
+
+    --item-unread-icon: hsl(var(--indicator-unread));
+    --item-unread-indicator: hsl(var(--indicator-unread), 0.5);
+    --item-unread-background: hsl(var(--indicator-unread), 0.025);
+    --item-unread-background-hover: hsl(var(--indicator-unread), 0.045);
+
+    --rs-small-spacing: 2px; /* Gap between avatar and status for members list/dms | MUST end in px */
+    --rs-medium-spacing: 3px; /* Gap between avatar and status for User popout | MUST end in px */
+    --rs-large-spacing: 4px; /* Gap between avatar and status for User profiles | MUST end in px */
+
+    --rs-small-width: 2px; /* Thickness of status border for members list/dms | MUST end in px */
+    --rs-medium-width: 3px; /* Thickness of status border for User popout | MUST end in px */
+    --rs-large-width: 4px; /* Thickness of status border for User profile | MUST end in px */
+
+    --rs-avatar-shape: 50%; /* 50% for round - 0% for square */
+
+    --rs-online-color: #43b581; /* Colour for online status */
+    --rs-idle-color: #faa61a; /* Colour for idle status */
+    --rs-dnd-color: #f04747; /* Colour for dnd status */
+    --rs-offline-color: #636b75; /* Colour for offline status */
+    --rs-streaming-color: #643da7; /* Colour for streaming status */
+    --rs-invisible-color: #747f8d; /* Colour for invisible status - Note: this will only show for your own invisibility */
+    --rs-phone-color: var(--rs-online-color); /* Colour of the ring and phone icon when a user is on their phone |  */
+
+    --rs-phone-visible: none; /* Visibility of the phone icon next to a users avatar. | block = visible | none = hidden */
+
+    --chat-bubble: 1;
+
+    --chat-bubble-background-color: var(--background-secondary);
+    --chat-bubble-border-color: var(--background-secondary-alt);
+    --chat-bubble-code-background-color: var(--background-secondary-alt);
+
+    --chat-bubble-max-width: 90%;
+    --chat-bubble-border-radius: 8px;
+
+    --chat-bubble-box-shadow-h-offset: 0;
+    --chat-bubble-box-shadow-v-offset: 4px;
+    --chat-bubble-box-shadow-blur: 4px;
+    
+    --chat-bubble-box-shadow-color-h: 0;
+    --chat-bubble-box-shadow-color-s: 0%;
+    --chat-bubble-box-shadow-color-l: 0%;
+    --chat-bubble-box-shadow-color-a: 0.16;
+
+    /*Favorite Icon + Banner */
+    --favorites-name: 'Chats Favoritos';
+    --favorites-guild-icon: url(https://cdn.discordapp.com/attachments/1059682379050008686/1070736642375172158/19178ce4454d7eda3a9498f80fecaf27.png);
+    --favorites-banner: url(https://www.dmit.co.th/wp-content/uploads/2020/09/Discord.jpg);
+
+    /* category icons */
+    /* Duplicate each group for additional categories (Up to 10), then replace both numbers. */
+    --category-1: '';
+    --c1: url(https://cdn.discordapp.com/attachments/1059682379050008686/1070732804285026404/19178ce4454d7eda3a9498f80fecaf27.png);
+    
+    --category-2: '';
+    --c2: url(https://cdn.discordapp.com/attachments/1059682379050008686/1070749158799056906/1032-blurple-bell.png);
+
+    --category-3: '';
+    --c3: url(https://cdn.discordapp.com/attachments/1059682379050008686/1070749970313003189/IconInsights.png);
+
+    --category-4: '';
+    --c4: url(https://cdn.discordapp.com/attachments/1059682379050008686/1070750832309579806/3858-blurple-star.png);
+
+    --category-5: '';
+    --c5: url(https://cdn.discordapp.com/attachments/1059682379050008686/1074006110849224795/IconVoiceChannel.png);
+    
+    --category-6: '';
+    --c6: url(https://cdn.discordapp.com/attachments/1059682379050008686/1074006110849224795/IconVoiceChannel.png);
+}
+
+[href*="youtu.be"],
+[href*="youtube.com"] {
+    color:#c4302b !important;
+    font-weight: 700;
+}
+
+[href*="twitch.tv"] {
+    color:#b700ff !important;
+    font-weight: 700;
+}
+[href*="spotify.com"] {
+    color:rgb(19, 185, 4) !important; 
+    font-weight: 700;
+}
+[href*="discord.com/channels/"] {
+    color:#7289da !important;
+}
+[href*="discord.com/channels/"]::before {
+    content:'Jump to Message : ';
+    font-size:16px;
+    font-weight:700;
+    color: #603cff;
+}
+[href*="reddit.com"] {
+    color:#e05a0c !important; 
+    font-weight: 700;
+}
+[href*="instagram.com/"]{
+    background: -webkit-linear-gradient(80deg, rgb(255, 238, 0), rgb(255, 157, 11), #b700ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+} 
+[href*="twitter.com/"]{
+    color:#00acee !important;
+    font-weight: 700;
+}
+[href*="betterdiscord.app/"],
+[href*="discord.gg/"] {
+    color:#7289da !important;
+    font-weight: 700;
+}
+[href*="github.com"]{
+    color:#00f0a8 !important;
+    font-weight: 700;
+}
+
+/* || Extra Customization */
+
+.container-2RRFHK {
+    background: transparent;
+    pointer-events: none;
+}
+.container-2RRFHK .anchor-1MIwyf { pointer-events: auto; }
+.container-2RRFHK .content-3AIQZv .text-2bYgPB {
+    display:none;
+}
+.container-2RRFHK .ready-3BZNWT {
+    position: absolute;
+    bottom: 44px;
+    right: 244px;
+    z-index: 1;
+}
+
+.container-2RRFHK img, .container-2RRFHK video {
+    width: 32px;
+    height: 32px;
+}
+.container-2RRFHK .problems-CvGwpb {
+    padding: 8px 16px;
+    bottom: 18px;
+    left: unset;
+    right: 18px;
+    width:fit-content;
+    height:fit-content;
+    background-color: var(--background-floating);
+    border-radius: 8px;
+    -webkit-box-shadow: var(--elevation-stroke), var(--elevation-medium);
+    box-shadow: var(--elevation-stroke), var(--elevation-medium);
+}
+
+.modeMuted-2T4MDZ .icon-2W8DHg path{ display: none; }
+.modeMuted-2T4MDZ .iconContainer-21RCa3{ position: relative; }
+.modeMuted-2T4MDZ .iconContainer-21RCa3:before{
+    content: '🔇';
+    position: absolute;
+    font-size: 20px; 
+}
+
+div#BDFDB-card, div#ZeresPluginLibrary-card, div#BunnyLib-card {display: none;}
+
+.menu-1QACrS, .colorDefault-CDqZdO { 
+    border-radius: 15px; 
+}
+
+.sidebarRegion-1VBisG, .sidebarRegionScroller-FXiQOh {
+    justify-content: unset;
+    flex: unset
+}
+.contentColumn-1C7as6, .customColumn-2n-oKU, .hero-1aNo0v {
+    max-width: unset;
+}
+.accountProfileCard-lbN7n- {
+    max-width: 750px;
+}
+.notificationSettings-1U0JsJ {
+    max-width: 45%;
+}
+
+.panels-3wFtMD > .container-YkUktl .flex-2S1XBF > :not(:last-child) {
+    opacity: 0% !important;
+    width: 30px;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.panels-3wFtMD > .container-YkUktl:hover .flex-2S1XBF > :not(:last-child) {
+    opacity: 100% !important;
+    width: 30px;
+}
+
+/* Unclamp the About Me section, so it's not limited to just 6 lines. (normally it cuts off at 6 and adds a ...) */
+.lineClamp2Plus-2RYGV2{
+    -webkit-line-clamp: 190; /*Maximum amount of characters as new lines, unset just breaks links*/
+    max-height:112px;
+    overflow-x: hidden;
+    overflow-y:auto;
+}
+.lineClamp2Plus-2RYGV2::-webkit-scrollbar {
+  width: 15px;
+  height: 15px;
+}
+.lineClamp2Plus-2RYGV2::-webkit-scrollbar-track {
+  border-radius: 10px; /*How round you want the scrollbar to be. 0 is square, 10px is round.*/
+  background-color: rgb(255 255 255 / 10%); /*Edit this to what color you want the track to be.*/
+}
+.lineClamp2Plus-2RYGV2::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, #00aeff, #a68eff); /* Edit this to whatever color/colors you'd like*/
+  border-radius: 10px; /*How round you want the scrollbar thumb to be. 0 is square, 10px is round.*/
+}
+
+/*
+.wordmark-2u86JB {
+    display: none;
+}
+
+#channelTabs-container{
+    -webkit-app-region: drag;
+    width: calc(100vw - 100px);
+}
+
+.titleBar-1it3bQ {
+    -webkit-app-region: drag;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 4000;
+    height: calc(var(--channelTabs-tabHeight) + 4px);
+}
+
+.channelTabs-tabNav, .channelTabs-tab, .channelTabs-newTab, #channelTabs-settingsMenu {
+    -webkit-app-region: no-drag;
+}
+
+#channelTabs-settingsMenu {
+    margin-right: 84px;
+    top: 0;
+    height: 22px !important;
+    width: 28px !important;
+}
+
+.channelTabs-settingsIcon {
+    max-height: 10px !important;
+    max-width: 10px !important;
+}
+
+.channelTabs-tabContainer {
+    width: calc(100% - 28px);
+}
+
+.channelTabs-favContainer {
+    -webkit-app-region: no-drag;
+    width: calc(100vw - 16px);
+}
+*/
+
+[aria-label="Boost this server"] {display: none;}
+
+.guilds-2JjMmN .tree-3agP2X:focus {
+  outline-color: transparent;
+}
+.guilds-2JjMmN .scroller-3X7KbA {
+  contain: unset;
+  margin-top: 56px;
+}
+.guilds-2JjMmN .scroller-3X7KbA .tutorialContainer-1pL9QS {
+  position: fixed;
+  transform: translatey( -100% );
+}
+
+.closedFolderIconWrapper-3tRb2d {
+    display: none;
+}
+.folderIconWrapper-1oRIZr:not([style=""])::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: inherit;
+    -webkit-mask: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/solid/folder.svg) no-repeat;
+    mask: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/solid/folder.svg) no-repeat;
+    transform: scale(1.3335);
+    filter: brightness(1.5) saturate(1.5);
+}
+
+/* Emoji Auto-Fill Animation */
+.base-2v-uc0 {
+    transition: all 0.5s;
+}
+.base-2v-uc0:hover {
+    transition: all 0s;
+    transform: scale(1.02);
+}
+
+.scroller-3X7KbA {
+  contain: unset;
+  padding-bottom: 190px;
+}
+.scroller-3X7KbA::before {
+    content: "";
+    position: fixed;
+    bottom: 0;
+    width: 72px;
+    height: 190px;
+    background: linear-gradient(transparent, var(--background-tertiary) 30%);
+    z-index: 1;
+}
+.tutorialContainer-2jwoiB {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+}
+.tutorialContainer-2jwoiB + .listItem-3SmSlK {
+    position: fixed;
+    bottom: 58px;
+    contain: none;
+    z-index: 1;
+}
+
+/* Better Jump To Present Button */
+[class*="jumpToPresentBar"] {
+    display: contents;
+}
+[class*="jumpToPresentBar"] > button:first-child {
+    display: none;
+}
+[class*="jumpToPresentBar"] > button:last-child {
+    position: absolute;
+    z-index: 1;
+    bottom: 24px;
+    right: 22px;
+    padding: 8px !important;
+    height: auto;
+    background-color: #5865F2;
+    box-shadow: var(--elevation-high);
+    border-radius: 100px;
+    display: flex;
+    font-size: 0px;
+    color: transparent;
+    transition: font-size .2s .1s, color .2s, padding .4s .1s;
+}
+[class*="jumpToPresentBar"] > button svg {
+    order: -1;
+    margin: 0px;
+    height: 24px;
+    width: 24px;
+    top: auto;
+    margin-right: 0px;
+    margin-left: 0px;
+    color: #FFFFFF;
+    transition: margin .6s;
+}
+[class*="jumpToPresentBar"]:hover > button {
+    padding: 8px 18px !important;
+    font-size: 14px;
+    color: #FFFFFF;
+    transition: font-size .2s, color .2s .1s, padding .4s;
+}
+[class*="jumpToPresentBar"]:hover > button svg {
+    margin-right: 2px;
+    margin-left: -6px;
+}
+
+/* Floating Folder */
+.wrapper-38slSD:active {
+    -webkit-transform: unset;
+    transform: none;
+}
+
+[id^="folder-items-"] {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 99;
+    overflow-y: auto;
+    max-height: calc(100vh - 72px);
+    margin: auto auto auto calc(72px + 8px);
+    padding-top: 8px;
+    border-radius: 8px;
+    background: var(--background-floating);
+    -webkit-box-shadow: var(--elevation-high);
+    box-shadow: var(--elevation-high);
+}
+
+[id^="folder-items-"]::-webkit-scrollbar {
+    display: none;
+}
+
+    /* Visible VC Text Button */
+#app-mount .openChatIconItem-2kj5qO {
+    display: flex;
+    order: 1;
+    justify-content: center;
+    border-radius: 4px;
+    width: 42px;
+    padding-right: 0;
+}
+
+.openChatIconItem-2kj5qO:hover { background-color: var(--background-modifier-selected); }
+.openChatIconItem-2kj5qO .actionIcon-2sw4Sl { color: var(--channels-default); }
+
+.membersWrap-3NUR2t {
+  min-width: unset;
+}
+.membersWrap-3NUR2t .members-3WRCEx {
+  max-width: 65px;
+  min-width: 65px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.membersWrap-3NUR2t .members-3WRCEx:hover {
+  max-width: 240px;
+  min-width: 240px;
+}
+.membersWrap-3NUR2t .members-3WRCEx .content-2a4AW9:not(:hover) {
+  padding-top: 10px;
+  background-color: #1E1F22;
+}
+
+.membersGroup-2eiWxl {
+  margin-left: 60px;
+  background-color: #1E1F22;
+  color: #fff;
+}
+
+.members-3WRCEx,
+.members-3WRCEx > div {
+  background-color: #1E1F22;
+}
+
+/* Unclamp the About Me section, so it's not limited to just 6 lines. (normally it cuts off at 6 and adds a ...) */
+.lineClamp2Plus-2SCQmH:not(.headerText-3MQ6n4 .lineClamp2Plus-2SCQmH){
+-webkit-line-clamp: unset !important;
+max-height:112px;
+overflow-x: hidden;
+overflow-y:auto;
+}
+.lineClamp2Plus-2SCQmH::-webkit-scrollbar {
+width: 15px;
+height: 15px;
+}
+.lineClamp2Plus-2SCQmH::-webkit-scrollbar-track{
+border-radius: 10px;
+background-color: rgba(255 255 255 / 4%);
+}
+.lineClamp2Plus-2SCQmH::-webkit-scrollbar-thumb{
+background: rgba(255 255 255 / 14%);
+border-radius: 10px;
+}
