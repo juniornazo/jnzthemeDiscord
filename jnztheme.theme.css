@@ -315,10 +315,11 @@ div#BDFDB-card, div#ZeresPluginLibrary-card, div#BunnyLib-card {display: none;}
 }
 .guilds-2JjMmN .scroller-3X7KbA {
   contain: unset;
-  margin-top: 56px;
+  margin-top: 71px;
 }
 .guilds-2JjMmN .scroller-3X7KbA .tutorialContainer-1pL9QS {
   position: fixed;
+  top: 68px;
   transform: translatey( -100% );
 }
 
