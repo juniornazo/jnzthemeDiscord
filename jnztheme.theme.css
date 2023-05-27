@@ -10,15 +10,16 @@
 @import url(https://maendisease.github.io/BetterDiscordStuff/css/bettterInvites.css);
 @import url('https://discord-extensions.github.io/modern-indicators/src/source.css');
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Microsoft.css);
-@import url(https://dablulite.github.io/accountdetailscolumns/import.css);
+@import url(//dablulite.github.io/css-snippets/AccountDetailsGrid/import.css);
 @import url(https://dablulite.github.io/redesigneduserareas/import.css);
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
 @import url(https://maendisease.github.io/BetterDiscordStuff/css/ChatBubbles.css);
 @import url(https://maendisease.github.io/BetterDiscordStuff/css/bdAddonMini.css);
 @import url("https://thecommieaxolotl.github.io/BetterDiscord-Stuff/Imports/DiscordLinks.css");
-@import url(https://dablulite.github.io/RedesignedUserPanel/import.css);
+@import url(//dablulite.github.io/css-snippets/RedesignedUserPanel/import.css);
 @import url(https://maendisease.github.io/BetterDiscordStuff/css/boostedFavorites.css);
 @import url(https://neodymium7.github.io/BetterDiscordStuff/CSS/AddServerDarkMode.css);
+
 
 
 /* || Configurations */
