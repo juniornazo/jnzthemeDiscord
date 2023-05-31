@@ -234,17 +234,6 @@ div#BDFDB-card, div#ZeresPluginLibrary-card, div#BunnyLib-card {display: none;}
     max-width: 45%;
 }
 
-.panels-3wFtMD > .container-YkUktl .flex-2S1XBF > :not(:last-child) {
-    opacity: 0% !important;
-    width: 30px;
-    transition: opacity 0.2s ease-in-out;
-}
-
-.panels-3wFtMD > .container-YkUktl:hover .flex-2S1XBF > :not(:last-child) {
-    opacity: 100% !important;
-    width: 30px;
-}
-
 /* Unclamp the About Me section, so it's not limited to just 6 lines. (normally it cuts off at 6 and adds a ...) */
 .lineClamp2Plus-2RYGV2{
     -webkit-line-clamp: 190; /*Maximum amount of characters as new lines, unset just breaks links*/
