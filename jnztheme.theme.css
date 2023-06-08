@@ -412,9 +412,7 @@ div#BDFDB-card, div#ZeresPluginLibrary-card, div#BunnyLib-card {display: none;}
     margin-left: -6px;
 }
 
-/*
-
-/* Floating Folder */
+/* Floating Folder
 .wrapper-38slSD:active {
     -webkit-transform: unset;
     transform: none;
