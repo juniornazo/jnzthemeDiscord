@@ -11,12 +11,13 @@
 @import url('https://discord-extensions.github.io/modern-indicators/src/source.css');
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Microsoft.css);
 @import url(//dablulite.github.io/css-snippets/AccountDetailsGrid/import.css);
+@import url(//dablulite.github.io/css-snippets/PrettyFolderIcons/import.css);
 @import url(https://dablulite.github.io/redesigneduserareas/import.css);
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
 @import url(https://maendisease.github.io/BetterDiscordStuff/css/ChatBubbles.css);
 @import url(https://maendisease.github.io/BetterDiscordStuff/css/bdAddonMini.css);
 @import url("https://thecommieaxolotl.github.io/BetterDiscord-Stuff/Imports/DiscordLinks.css");
-@import url(//dablulite.github.io/css-snippets/RedesignedUserPanel/import.css);
+@import url(//dablulite.github.io/css-snippets/UserReimagined/condensed.css);
 @import url(https://maendisease.github.io/BetterDiscordStuff/css/boostedFavorites.css);
 @import url(https://neodymium7.github.io/BetterDiscordStuff/CSS/AddServerDarkMode.css);
 @import url('https://discordstyles.github.io/Fluent/Icons.css');
@@ -316,6 +317,7 @@ div#BDFDB-card, div#ZeresPluginLibrary-card, div#BunnyLib-card {display: none;}
   transform: translatey( -100% );
 }
 
+/*
 .closedFolderIconWrapper-3tRb2d {
     display: none;
 }
@@ -334,7 +336,7 @@ div#BDFDB-card, div#ZeresPluginLibrary-card, div#BunnyLib-card {display: none;}
     mask: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/solid/folder.svg) no-repeat;
     transform: scale(1.3335);
     filter: brightness(1.5) saturate(1.5);
-}
+}*/
 
 /* Emoji Auto-Fill Animation */
 .base-2v-uc0 {
