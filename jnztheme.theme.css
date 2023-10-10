@@ -257,51 +257,6 @@ div#BDFDB-card, div#ZeresPluginLibrary-card, div#BunnyLib-card {display: none;}
   border-radius: 10px; /*How round you want the scrollbar thumb to be. 0 is square, 10px is round.*/
 }
 
-/*
-.wordmark-2u86JB {
-    display: none;
-}
-
-#channelTabs-container{
-    -webkit-app-region: drag;
-    width: calc(100vw - 100px);
-}
-
-.titleBar-1it3bQ {
-    -webkit-app-region: drag;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 4000;
-    height: calc(var(--channelTabs-tabHeight) + 4px);
-}
-
-.channelTabs-tabNav, .channelTabs-tab, .channelTabs-newTab, #channelTabs-settingsMenu {
-    -webkit-app-region: no-drag;
-}
-
-#channelTabs-settingsMenu {
-    margin-right: 84px;
-    top: 0;
-    height: 22px !important;
-    width: 28px !important;
-}
-
-.channelTabs-settingsIcon {
-    max-height: 10px !important;
-    max-width: 10px !important;
-}
-
-.channelTabs-tabContainer {
-    width: calc(100% - 28px);
-}
-
-.channelTabs-favContainer {
-    -webkit-app-region: no-drag;
-    width: calc(100vw - 16px);
-}
-*/
-
 [aria-label="Boost this server"] {display: none;}
 
 .guilds-2JjMmN .tree-3agP2X:focus {
@@ -316,27 +271,6 @@ div#BDFDB-card, div#ZeresPluginLibrary-card, div#BunnyLib-card {display: none;}
   top: 68.5px;
   transform: translatey( -100% );
 }
-
-/*
-.closedFolderIconWrapper-3tRb2d {
-    display: none;
-}
-.folderIconWrapper-1oRIZr:not([style=""])::before {
-    position: absolute;
-    content: "";
-    width: 18px;
-    height: 18px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    background-color: inherit;
-    -webkit-mask: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/solid/folder.svg) no-repeat;
-    mask: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/solid/folder.svg) no-repeat;
-    transform: scale(1.3335);
-    filter: brightness(1.5) saturate(1.5);
-}*/
 
 /* Emoji Auto-Fill Animation */
 .base-2v-uc0 {
@@ -439,48 +373,6 @@ div#BDFDB-card, div#ZeresPluginLibrary-card, div#BunnyLib-card {display: none;}
 
 [id^="folder-items-"]::-webkit-scrollbar {
     display: none;
-}
-
-    /* Visible VC Text Button */
-#app-mount .openChatIconItem-2kj5qO {
-    display: flex;
-    order: 1;
-    justify-content: center;
-    border-radius: 4px;
-    width: 42px;
-    padding-right: 0;
-}
-
-.openChatIconItem-2kj5qO:hover { background-color: var(--background-modifier-selected); }
-.openChatIconItem-2kj5qO .actionIcon-2sw4Sl { color: var(--channels-default); }
-
-.membersWrap-3NUR2t {
-  min-width: unset;
-}
-.membersWrap-3NUR2t .members-3WRCEx {
-  max-width: 65px;
-  min-width: 65px;
-  -webkit-transition: 0.3s ease;
-  transition: 0.3s ease;
-}
-.membersWrap-3NUR2t .members-3WRCEx:hover {
-  max-width: 240px;
-  min-width: 240px;
-}
-.membersWrap-3NUR2t .members-3WRCEx .content-2a4AW9:not(:hover) {
-  padding-top: 10px;
-  background-color: #1E1F22;
-}
-
-.membersGroup-2eiWxl {
-  margin-left: 60px;
-  background-color: #1E1F22;
-  color: #fff;
-}
-
-.members-3WRCEx,
-.members-3WRCEx > div {
-  background-color: #1E1F22;
 }
 
 /* Unclamp the About Me section, so it's not limited to just 6 lines. (normally it cuts off at 6 and adds a ...) */
