@@ -275,10 +275,10 @@ div#BDFDB-card, div#ZeresPluginLibrary-card, div#BunnyLib-card {display: none;}
 }
 
 /* Emoji Auto-Fill Animation */
-.base-2v-uc0 {
+.base__76a71 {
     transition: all 0.5s;
 }
-.base-2v-uc0:hover {
+.base__76a71:hover {
     transition: all 0s;
     transform: scale(1.02);
 }
@@ -370,4 +370,52 @@ background-color: rgba(255 255 255 / 4%);
 .lineClamp2Plus-2SCQmH::-webkit-scrollbar-thumb{
 background: rgba(255 255 255 / 14%);
 border-radius: 10px;
+}
+
+#app-mount .repliedMessage_e2bf4a {
+  position: absolute;
+  top: 25px;
+  left: 86px;
+  background: var(--background-secondary);
+  border: 1px solid var(--background-tertiary);
+  width: fit-content;
+  max-width: calc(60vw - 240px);
+  margin-left: -5px;
+  padding: 3px 5px;
+  border-radius: 0 4px 4px 4px;
+  box-sizing: border-box;
+}
+#app-mount .repliedMessage_e2bf4a > div {
+  position: relative;
+  z-index: 1;
+}
+#app-mount .repliedMessage_e2bf4a img.replyAvatar_cea07c {
+  display: none;
+}
+#app-mount .repliedMessage_e2bf4a img.emoji {
+  display: inline;
+}
+#app-mount .repliedMessage_e2bf4a .username_d30d99 {
+  margin-right: 5px;
+}
+#app-mount .repliedMessage_e2bf4a::before {
+  content: none;
+}
+#app-mount .repliedMessage_e2bf4a::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -4px;
+  z-index: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 0;
+  background: var(--background-secondary);
+  border: 1px solid var(--background-tertiary);
+  transform: skewX(45deg);
+  border-bottom: none;
+  border-right: none;
+}
+#app-mount .repliedMessage_e2bf4a + .contents_f41bb2 .header__39b23 {
+  margin-bottom: 32px;
 }
