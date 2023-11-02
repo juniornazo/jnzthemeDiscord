@@ -352,31 +352,6 @@ div#BDFDB-card, div#ZeresPluginLibrary-card, div#BunnyLib-card {display: none;}
     margin-left: -6px;
 }
 
-/* Floating Folder */
-.wrapper-38slSD:active {
-    -webkit-transform: unset;
-    transform: none;
-}
-
-[id^="folder-items-"] {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    z-index: 99;
-    overflow-y: auto;
-    max-height: calc(100vh - 72px);
-    margin: auto auto auto calc(72px + 8px);
-    padding-top: 8px;
-    border-radius: 8px;
-    background: var(--background-floating);
-    -webkit-box-shadow: var(--elevation-high);
-    box-shadow: var(--elevation-high);
-}
-
-[id^="folder-items-"]::-webkit-scrollbar {
-    display: none;
-}
-
 /* Unclamp the About Me section, so it's not limited to just 6 lines. (normally it cuts off at 6 and adds a ...) */
 .lineClamp2Plus-2SCQmH:not(.headerText-3MQ6n4 .lineClamp2Plus-2SCQmH){
 -webkit-line-clamp: unset !important;
