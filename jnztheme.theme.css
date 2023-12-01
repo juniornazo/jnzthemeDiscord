@@ -20,7 +20,6 @@
 @import url(//dablulite.github.io/css-snippets/UserReimagined/condensed.css);
 @import url(https://maendisease.github.io/BetterDiscordStuff/css/boostedFavorites.css);
 @import url(https://neodymium7.github.io/BetterDiscordStuff/CSS/AddServerDarkMode.css);
-@import url('https://discordstyles.github.io/Fluent/Icons.css');
 @import url("https://dablulite.github.io/css-snippets/BetterStatusPicker/import.css");
 @import url("https://dablulite.github.io/css-snippets/SpotifyActivityRedesign/import.css");
 
@@ -108,26 +107,6 @@
     --favorites-name: 'Chats Favoritos';
     --favorites-guild-icon: url(https://cdn.discordapp.com/attachments/1059682379050008686/1070736642375172158/19178ce4454d7eda3a9498f80fecaf27.png);
     --favorites-banner: url(https://www.dmit.co.th/wp-content/uploads/2020/09/Discord.jpg);
-
-    /* category icons */
-    /* Duplicate each group for additional categories (Up to 10), then replace both numbers. */
-    --category-1: '🏠';
-    //--c1: '';
-    
-    --category-2: '🔔';
-    //--c2: '';
-
-    --category-3: '💬';
-    //--c3: '';
-
-    --category-4: '🎨';
-    //--c4: '';
-
-    --category-5: '🐻';
-    //--c5: '';
-    
-    --category-6: '🔊';
-    //--c6: '';
 }
 
 [href*="youtu.be"],
