@@ -83,3 +83,14 @@
   }
 
  /* Put your custom css below here */
+
+.theme-light {
+
+    --fullwhite-font:                 0, 0, 0                         ;/* Default: 250, 253, 255                                         - Color used for texts with the full white color. Note that these vars also modify some icons.                                                                                                                   */
+    --normal-font:                    15, 15, 15                         ;/* Theme Default: 201, 203, 206 - Discord Default: 185, 187, 190  - Color used for texts with the normal white color.                                                                                                                                                              */
+    --normal-hover-font:              17, 23, 31                         ;/* Theme Default: 238, 239, 240 - Discord Default: 220, 221, 222  - Color used for texts with the white color when hovering.                                                                                                                                                       */
+    --muted-font:                     36, 36, 36                         ;/* Default: 114, 118, 125                                         - Muted text is commonly darker than the normal text color.                                                                                                                                                      */
+    --link-text:                      23, 31, 48                           ;/* Default: 0, 176, 244                                           - Color used for links.                                                                                                                                                                                          */
+    --font-in-accent:                 0, 0, 0                               ;/* Default: 0, 0, 0                                               - Color used for text and icons that are in a element that has the --accent-color-X variable as a background color.                                                                                              */
+ 
+}
