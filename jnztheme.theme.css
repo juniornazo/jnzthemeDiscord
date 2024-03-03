@@ -482,7 +482,7 @@ border-radius: 10px;
   opacity: 1;
 }
 [class^=channelTextArea_] [class^=buttons_]:hover::before /* Hide the hover button on hover */ {
-  margin-right: 8px;
+  margin-right: 12px;
   scale: 0 1;
 }
 
