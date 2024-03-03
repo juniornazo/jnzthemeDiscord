@@ -23,6 +23,7 @@
 @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/SettingsModal/SettingsModal.css);
 @import url(https://davart154.github.io/Themes/Snippets/TempDEL/ReplaceDarkWDarker.css);
 @import url(https://feorev.github.io/Themes/Discord/PublicSnippets/ConnectionsColorizer.css);
+@import url(//dablulite.github.io/css-snippets/SuperUserArea/import.css);
 
 
 
@@ -535,44 +536,4 @@ border-radius: 10px;
 }
 .container_b2ce9c:hover{
   margin-right: unset!important;
-}
-
-/* --Improved User Area-- */
-/* Make both the username and status message visible at all times. */
-.container_ca50b9 .hovered__243e5, .hoverRoll__041cb.forceHover__71322:not(.disabled__89e5c) .default_cae228{
-  opacity: 1!important;
-  transform: none;
-}
-/* Adds an @ to the username. Discord, for the love of god, just add this yourself already. */
-.container_ca50b9 .hovered__243e5::before{
-  content: "@";
-}
-/* Move the custom Status message down so that it doesnt overlap with the Username */
-.default_cae228{
-  margin-top: 15px;
-}
-/* Credit to @thecommieaxolotl for this code. */
-/* --Hides User Buttons until Hover-- */
-/* Hide mute and deafen buttons */
-.panels__58331 > .container_ca50b9 .flex_f5fbb7 > :not(:last-child) {
-  opacity: 0% !important;
-  width: 0px;
-  transition: all 0.3s ease-in-out;
-}
-/* Reveal mute and Deafen buttons when settings button is hovered */
-.panels__58331 > .container_ca50b9 .flex_f5fbb7:hover > :not(:last-child) {
-  opacity: 100% !important;
-  width: 32px;
-}
-/* Resize and move the profile button to take up all the space it can to look clean. */
-.avatarWrapper_ba5175{
-  transition: all 0.3s ease-in-out;
-  width: 100%!important;
-  margin-left: -10px;
-  height: 53px;
-  border-radius: 0!important;
-}
-/* Move the avatar back to the right a bit to look clean. */
-.avatarWrapper_ba5175 .avatar_f8541f{
-  margin-left: 10px;
 }
